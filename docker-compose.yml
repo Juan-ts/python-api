@@ -2,18 +2,6 @@ version: "3"
 
 services:
     app:
-        # image: 751478881607.dkr.ecr.us-east-1.amazonaws.com/mindco-backend:v0.0.2 - REMOTE
-        image: 751478881607.dkr.ecr.us-east-1.amazonaws.com/mindco-backend:v0.0.3
+        image: dt-python-test:latest
         ports:
-            - "443:443"
-        volumes:
-            - ../ssl:/mindco-backend/ssl
-        environment:
-            - DB_USER=m1nDc0_t35t
-            - DB_PASS=M1ndC0*24
-            - DB_HOST=mindco-d.cyjqq9knezyi.us-east-1.rds.amazonaws.com
-            - DB_NAME=mindco
-            - AWS_REGION=us-east-1
-            - AWS_COGNITO_USERPOOL_ID=us-east-1_rqSnPgSaG
-            - AWS_CLIENT_ID=60ougjmggq9tatr7nqtkuf2t22
-        restart: always
+            - "8000:8000"
