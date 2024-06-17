@@ -4,4 +4,4 @@ services:
     app:
         image: dt-python-test:latest
         ports:
-            - "8000:8000"
+            - "8080:8080"
